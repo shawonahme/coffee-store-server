@@ -27,7 +27,7 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
-    await client.connect();
+    // await client.connect();
     const database = client.db('coffeeStore');
     const CoffeCollection = database.collection('coffeeList')
 
@@ -140,10 +140,3 @@ app.listen(port, () => {
   console.log(`this port is open is${port}`)
 })
 
-
-// https://i.ibb.co.com/X8V3txQ/1.png
-// https://i.ibb.co.com/TYSRnxx/2.png
-// https://i.ibb.co.com/r7zxcbw/3.png
-// https://i.ibb.co.com/3Ccx409/4.png
-// https://i.ibb.co.com/zVr5r40/5.png
-// https://i.ibb.co.com/S3Hfy82/6.png 
